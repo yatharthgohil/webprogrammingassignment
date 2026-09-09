@@ -1,0 +1,130 @@
+/* My color palette:
+   #f7f3eb - warm cream for the page background
+   #192b3b - deep navy for headings and the header
+   #384854 - slate for the main text
+   #795921 - antique brass for accents and the last paragraph
+   #ddd2be - soft sand for borders
+
+   Fonts: Arial for body text, Georgia for headings and the introduction,
+   and Courier New for the final paragraph. Nothing fancy to install.
+*/
+
+/* A centered page with some breathing room keeps everything easy to read. */
+body {
+  background-color: #f7f3eb;
+  color: #384854;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+/* Navy and cream give the header a classic watch-style look. */
+.site-header {
+  background-color: #192b3b;
+  color: #f7f3eb;
+  padding: 20px;
+  border-bottom: 4px solid #795921;
+}
+
+.site-label {
+  display: block;
+  color: #ddd2be;
+}
+
+/* Serif headings feel a little more traditional. */
+h1, h2 {
+  font-family: Georgia, serif;
+  color: #192b3b;
+}
+
+/* These links use our palette, with an underline so they are easy to spot. */
+a {
+  color: #192b3b;
+  text-underline-offset: 3px;
+}
+
+a:visited {
+  color: #795921;
+}
+
+a:hover {
+  color: #795921;
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid #795921;
+  outline-offset: 3px;
+}
+
+nav {
+  margin: 20px 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd2be;
+}
+
+/* Photos keep their original proportions, even on a small screen. */
+figure {
+  margin: 0;
+}
+
+img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  color: #384854;
+}
+
+/* Still three different paragraph styles, just with matching colors now. */
+.intro {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #192b3b;
+}
+
+.detail {
+  font-family: Arial, sans-serif;
+  color: #384854;
+}
+
+.reflection {
+  font-family: 'Courier New', monospace;
+  color: #795921;
+  font-style: italic;
+  border-left: 3px solid #795921;
+  padding-left: 16px;
+}
+
+/* The table repeats the header colors to keep the site consistent. */
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd2be;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #192b3b;
+  color: #f7f3eb;
+}
+
+/* Let the table scroll if the screen is really narrow. */
+.table-wrap {
+  overflow-x: auto;
+}
+
+/* A simple border separates the footer from the content. */
+footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #ddd2be;
+  color: #384854;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- This sets up the browser tab and keeps the page readable on a phone. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Watch Collection | The Watch Journal</title>
+  <link rel="stylesheet" href="watch-styles.css">
+</head>
+<body class="collection">
+  <!-- Same header on every page so everything feels connected. -->
+  <header class="site-header"><span>The Watch Journal</span><span class="site-label">A student’s take on timepieces</span></header>
+  <main>
+    <!-- These relative links point to our files. The br tags put them on separate lines. -->
+    <nav aria-label="Main navigation">
+      <a href="everyday-watches.html">01 / Everyday Watches</a><br>
+      <a href="watch-design.html">02 / Watch Design</a><br>
+      <a href="watch-collection.html" aria-current="page">03 / A Watch Collection</a>
+      <br><a href="about.html">04 / About</a>
+    </nav>
+    <!-- One main heading makes the topic pretty obvious. -->
+    <header class="page-header"><span class="eyebrow">03 / A Watch Collection</span><h1>Different watches.<br>Different stories.</h1></header>
+    <!-- A local photo stays with the project, and alt text helps if someone can’t see it. -->
+    <figure><img src="images/collection.jpg" alt="Close-up photograph of a wristwatch" width="1400" height="800"><figcaption>A Watch Collection / The Watch Journal</figcaption></figure>
+    <!-- The three classes give each paragraph its own font, color, and style. -->
+    <section class="story" aria-label="A Watch Collection">
+      <p class="intro">A watch collection can start with just one piece that means something to you. A gift, a reminder of a special day, or a watch you saved up for can be more interesting than a drawer full of things you never wear.</p>
+      <p class="detail">Learning about movements is part of the fun. A quartz watch uses an electronic oscillator regulated by a quartz crystal. A mechanical watch runs on a wound spring, and an automatic watch is a mechanical watch that can also wind itself through the motion of the wearer’s wrist.</p>
+      <p class="reflection">I would rather build a small collection slowly and actually enjoy each watch. Keeping a few notes about what I like makes collecting feel more thoughtful, and it gives every piece a little story of its own.</p>
+    </section>
+    <!-- Here’s the bulleted list of details I like to notice in a watch. -->
+    <section class="watch-details">
+      <div>
+        <h2>Details I look for</h2>
+        <ul>
+          <li>A dial that is easy to read</li>
+          <li>A comfortable strap or bracelet</li>
+          <li>A case size that feels right on my wrist</li>
+          <li>A design I would actually wear often</li>
+        </ul>
+      </div>
+      <!-- This table compares movements. Scope helps screen readers match the headings and cells. -->
+      <div class="table-wrap">
+        <table>
+          <caption>Three movement types</caption>
+          <thead><tr><th scope="col">Movement</th><th scope="col">Power source</th><th scope="col">How it winds</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Quartz</th><td>Electricity, usually from a battery</td><td>No winding needed</td></tr>
+            <tr><th scope="row">Manual mechanical</th><td>A wound mainspring</td><td>By turning the crown</td></tr>
+            <tr><th scope="row">Automatic mechanical</th><td>A wound mainspring</td><td>A rotor turns with wrist motion</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <!-- A matching footer wraps things up and labels this page. -->
+  <footer>The Watch Journal <span>03 / A Watch Collection</span></footer>
+</body>
+</html>
+
+
