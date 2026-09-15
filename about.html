@@ -1,44 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic setup for the tab, phone screens, and our external stylesheet. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The story and point of view behind The Watch Journal.">
   <title>About | The Watch Journal</title>
   <link rel="stylesheet" href="watch-styles.css">
 </head>
-<body>
-  <!-- Keeping the same header makes this feel like part of the site. -->
+<body class="about">
   <header class="site-header">
-    <span>The Watch Journal</span>
+    <a class="brand" href="everyday-watches.html" aria-label="The Watch Journal home">
+      <span class="brand-mark">TWJ</span>
+      <span>The Watch Journal</span>
+    </a>
     <span class="site-label">A student’s take on timepieces</span>
   </header>
-  <main>
-    <!-- These relative links connect the About page to the rest of the project. -->
-    <nav aria-label="Main navigation">
-      <a href="everyday-watches.html">01 / Everyday Watches</a><br>
-      <a href="watch-design.html">02 / Watch Design</a><br>
-      <a href="watch-collection.html">03 / A Watch Collection</a><br>
-      <a href="about.html" aria-current="page">04 / About</a>
-    </nav>
 
-    <!-- This heading tells visitors what this page is about. -->
-    <h1>About The Watch Journal</h1>
+  <main class="about-layout">
+    <aside class="about-sidebar">
+      <p class="nav-label">Journal index</p>
+      <nav class="about-nav" aria-label="Main navigation">
+        <a href="everyday-watches.html"><span>01</span> Everyday Watches</a>
+        <a href="watch-design.html"><span>02</span> Watch Design</a>
+        <a href="watch-collection.html"><span>03</span> A Watch Collection</a>
+        <a href="about.html" aria-current="page"><span>04</span> About</a>
+      </nav>
+      <p class="sidebar-note">Observations on the objects that help us keep, mark, and remember time.</p>
+    </aside>
 
-    <!-- Here’s a little about why I like watches and wanted to share that interest. -->
-    <p class="intro">I created The Watch Journal for a simple reason: I like watches. There is something really cool about an everyday object that combines style, engineering, and personality. This site is a place for me to share that interest and explore the details that make each watch different.</p>
+    <article class="about-content">
+      <header class="about-hero">
+        <div>
+          <p class="eyebrow">04 / About the journal</p>
+          <h1>Time is personal.<br>So is the way we wear it.</h1>
+        </div>
+        <p class="hero-summary">A quiet corner of the internet for thoughtful design, tiny mechanics, and the stories we carry on our wrists.</p>
+      </header>
 
-    <p class="detail">What interests me most is how much thought can go into something that fits on your wrist. The shape of the hands, the texture of a dial, and the movement working inside all have a part to play. I enjoy how two watches can do the same basic job but look and feel completely different, from a simple everyday watch to a detailed mechanical piece.</p>
+      <div class="about-rule" aria-hidden="true">
+        <span></span>
+        <span class="rule-diamond"></span>
+        <span></span>
+      </div>
 
-    <p class="reflection">For me, a watch does not have to be expensive or famous to be interesting. Sometimes it is a color that catches your eye, a design that suits your style, or a memory attached to it. That personal side is what makes watches worth talking about, and it is what I want to share through The Watch Journal.</p>
+      <section class="about-story" aria-labelledby="our-story-title">
+        <div class="section-heading">
+          <p class="section-number">01</p>
+          <h2 id="our-story-title">The story</h2>
+        </div>
+        <div class="story-copy">
+          <p class="intro">I created The Watch Journal for a simple reason: I like watches. There is something remarkable about an everyday object that combines style, engineering, and personality.</p>
+          <p>A watch can be practical without being ordinary. The shape of the hands, the texture of a dial, and the movement working inside all play a part. Two watches can do the same basic job and still look and feel completely different.</p>
+        </div>
+      </section>
 
-    <!-- This link takes visitors back to the main watch page. -->
-    <section aria-label="Explore the site">
-      <h2>Explore The Watch Journal</h2>
-      <a href="everyday-watches.html">Visit The Watch Journal</a>
-    </section>
+      <section class="about-values" aria-labelledby="values-title">
+        <div class="section-heading">
+          <p class="section-number">02</p>
+          <h2 id="values-title">What matters here</h2>
+        </div>
+        <div class="value-grid">
+          <article>
+            <span class="value-icon" aria-hidden="true">◇</span>
+            <h3>Design</h3>
+            <p>Small choices in proportion, color, and texture can give a watch its entire character.</p>
+          </article>
+          <article>
+            <span class="value-icon" aria-hidden="true">◷</span>
+            <h3>Craft</h3>
+            <p>Behind every clear dial is a balance of careful engineering and considered detail.</p>
+          </article>
+          <article>
+            <span class="value-icon" aria-hidden="true">✦</span>
+            <h3>Meaning</h3>
+            <p>The most interesting watch is not always the rarest. Often, it is the one with a story.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-quote" aria-label="Journal philosophy">
+        <p>“A good watch does more than tell the time. It becomes part of how you remember it.”</p>
+        <a class="explore-link" href="everyday-watches.html">Explore the journal <span aria-hidden="true">→</span></a>
+      </section>
+    </article>
   </main>
-  <!-- A small footer finishes the page. -->
-  <footer>The Watch Journal / About</footer>
+
+  <footer class="about-footer">
+    <span>© 2026 The Watch Journal</span>
+    <span>Made with curiosity and good timing.</span>
+  </footer>
 </body>
 </html>

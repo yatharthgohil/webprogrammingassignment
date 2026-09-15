@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- This sets up the browser tab and keeps the page readable on a phone. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exploring the details that give a watch its character.">
   <title>Watch Design | The Watch Journal</title>
   <link rel="stylesheet" href="watch-styles.css">
 </head>
-<body class="design">
-  <!-- Same header on every page so everything feels connected. -->
-  <header class="site-header"><span>The Watch Journal</span><span class="site-label">A student’s take on timepieces</span></header>
-  <main>
-    <!-- These relative links point to our files. The br tags put them on separate lines. -->
-    <nav aria-label="Main navigation">
-      <a href="everyday-watches.html">01 / Everyday Watches</a><br>
-      <a href="watch-design.html" aria-current="page">02 / Watch Design</a><br>
-      <a href="watch-collection.html">03 / A Watch Collection</a>
-      <br><a href="about.html">04 / About</a>
-    </nav>
-    <!-- One main heading makes the topic pretty obvious. -->
-    <header class="page-header"><span class="eyebrow">02 / Watch Design</span><h1>Small details.<br>Big character.</h1></header>
-    <!-- A local photo stays with the project, and alt text helps if someone can’t see it. -->
-    <figure><img src="images/design.jpg" alt="Close-up photograph of a wristwatch" width="1400" height="800"><figcaption>Watch Design / The Watch Journal</figcaption></figure>
-    <!-- The three classes give each paragraph its own font, color, and style. -->
-    <section class="story" aria-label="Watch Design">
-      <p class="intro">Two watches can tell the same time and still have completely different personalities. The shape of the case, the color of the dial, and the style of the strap all help create that first impression.</p>
-      <p class="detail">The dial is the face of the watch, while the case holds and protects the movement inside. Hour markers and hands make an analog display readable. Even a small change, like replacing a leather strap with a metal bracelet, can make a familiar watch feel different.</p>
-      <p class="reflection">I usually lean toward a clean dial with just a few interesting details. A watch does not need to be flashy to stand out; sometimes a nice texture or a well-chosen color is the part I notice most.</p>
-    </section>
+<body class="journal-page design">
+  <header class="site-header">
+    <a class="brand" href="everyday-watches.html" aria-label="The Watch Journal home"><span class="brand-mark">TWJ</span><span>The Watch Journal</span></a>
+    <span class="site-label">A student’s take on timepieces</span>
+  </header>
+  <main class="about-layout">
+    <aside class="about-sidebar">
+      <p class="nav-label">Journal index</p>
+      <nav class="about-nav" aria-label="Main navigation">
+        <a href="everyday-watches.html"><span>01</span> Everyday Watches</a>
+        <a href="watch-design.html" aria-current="page"><span>02</span> Watch Design</a>
+        <a href="watch-collection.html"><span>03</span> A Watch Collection</a>
+        <a href="about.html"><span>04</span> About</a>
+      </nav>
+      <p class="sidebar-note">Observations on the objects that help us keep, mark, and remember time.</p>
+    </aside>
+    <article class="journal-content">
+      <header class="journal-hero">
+        <div><p class="eyebrow">02 / Watch Design</p><h1>Small details.<br>Big character.</h1></div>
+        <p class="journal-deck">A closer look at the lines, materials, and proportions that turn an instrument into an expression.</p>
+      </header>
+      <figure class="feature-image">
+        <img src="images/design.jpg" alt="Close-up photograph showing the details of a wristwatch" width="1400" height="800">
+        <figcaption>Watch Design / The Watch Journal</figcaption>
+      </figure>
+      <section class="article-story" aria-labelledby="design-story">
+        <div class="section-heading"><p class="section-number">The journal</p><h2 id="design-story">Character by design</h2></div>
+        <div class="article-copy">
+          <p class="intro">Two watches can tell the same time and still have completely different personalities. The shape of the case, the color of the dial, and the style of the strap all help create that first impression.</p>
+          <p class="detail">The dial is the face of the watch, while the case holds and protects the movement inside. Hour markers and hands make an analog display readable. Even a small change, like replacing a leather strap with a metal bracelet, can make a familiar watch feel different.</p>
+          <p class="reflection">I usually lean toward a clean dial with just a few interesting details. A watch does not need to be flashy to stand out; sometimes a nice texture or a well-chosen color is the part I notice most.</p>
+        </div>
+      </section>
+    </article>
   </main>
-  <!-- A matching footer wraps things up and labels this page. -->
-  <footer>The Watch Journal <span>02 / Watch Design</span></footer>
+  <footer class="about-footer"><span>© 2026 The Watch Journal</span><span>02 / Watch Design</span></footer>
 </body>
 </html>
-
-
