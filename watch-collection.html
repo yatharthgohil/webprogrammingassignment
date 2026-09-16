@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="watch-styles.css">
 </head>
 <body class="journal-page collection">
+  <!-- Shared site header: the logo links back to the first journal page. -->
   <header class="site-header">
     <a class="brand" href="everyday-watches.html" aria-label="The Watch Journal home"><span class="brand-mark">TWJ</span><span>The Watch Journal</span></a>
     <span class="site-label">A student’s take on timepieces</span>
   </header>
+  <!-- CSS Grid divides the page into a navigation sidebar and main article. -->
   <main class="about-layout">
+    <!-- This sidebar keeps the navigation visible and highlights the current page. -->
     <aside class="about-sidebar">
       <p class="nav-label">Journal index</p>
       <nav class="about-nav" aria-label="Main navigation">
@@ -23,15 +26,19 @@
       </nav>
       <p class="sidebar-note">Observations on the objects that help us keep, mark, and remember time.</p>
     </aside>
+    <!-- The main article contains the page introduction, image, and written content. -->
     <article class="journal-content">
+      <!-- The hero uses a two-column grid for the title and short description. -->
       <header class="journal-hero">
         <div><p class="eyebrow">03 / A Watch Collection</p><h1>Different watches.<br>Different stories.</h1></div>
         <p class="journal-deck">Collect slowly, choose thoughtfully, and let every piece earn a place through use and memory.</p>
       </header>
+      <!-- A local image is used so the page still works without an internet connection. -->
       <figure class="feature-image">
         <img src="images/collection.jpg" alt="Close-up photograph of a wristwatch in a collection" width="1400" height="800">
         <figcaption>A Watch Collection / The Watch Journal</figcaption>
       </figure>
+      <!-- This section places the heading beside the article paragraphs. -->
       <section class="article-story" aria-labelledby="collection-story">
         <div class="section-heading"><p class="section-number">The journal</p><h2 id="collection-story">Built with meaning</h2></div>
         <div class="article-copy">
@@ -40,12 +47,14 @@
           <p class="reflection">I would rather build a small collection slowly and actually enjoy each watch. Keeping a few notes about what I like makes collecting feel more thoughtful, and it gives every piece a story of its own.</p>
         </div>
       </section>
+      <!-- The details area uses another grid for the list and comparison table. -->
       <section class="watch-details" aria-label="Collection details">
         <div><p class="section-number">A closer look</p><h2>Details I look for</h2><ul><li>A dial that is easy to read</li><li>A comfortable strap or bracelet</li><li>A case size that feels right</li><li>A design I would wear often</li></ul></div>
         <div class="table-wrap"><table><caption>Three movement types</caption><thead><tr><th scope="col">Movement</th><th scope="col">Power source</th><th scope="col">How it winds</th></tr></thead><tbody><tr><th scope="row">Quartz</th><td>Electricity, usually a battery</td><td>No winding needed</td></tr><tr><th scope="row">Manual mechanical</th><td>A wound mainspring</td><td>By turning the crown</td></tr><tr><th scope="row">Automatic mechanical</th><td>A wound mainspring</td><td>A rotor turns with wrist motion</td></tr></tbody></table></div>
       </section>
     </article>
   </main>
+  <!-- The matching footer finishes the page and identifies this journal entry. -->
   <footer class="about-footer"><span>© 2026 The Watch Journal</span><span>03 / A Watch Collection</span></footer>
 </body>
 </html>

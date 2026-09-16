@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="watch-styles.css">
 </head>
 <body class="journal-page design">
+  <!-- Shared site header: the logo links back to the first journal page. -->
   <header class="site-header">
     <a class="brand" href="everyday-watches.html" aria-label="The Watch Journal home"><span class="brand-mark">TWJ</span><span>The Watch Journal</span></a>
     <span class="site-label">A student’s take on timepieces</span>
   </header>
+  <!-- CSS Grid divides the page into a navigation sidebar and main article. -->
   <main class="about-layout">
+    <!-- This sidebar keeps the navigation visible and highlights the current page. -->
     <aside class="about-sidebar">
       <p class="nav-label">Journal index</p>
       <nav class="about-nav" aria-label="Main navigation">
@@ -23,15 +26,19 @@
       </nav>
       <p class="sidebar-note">Observations on the objects that help us keep, mark, and remember time.</p>
     </aside>
+    <!-- The main article contains the page introduction, image, and written content. -->
     <article class="journal-content">
+      <!-- The hero uses a two-column grid for the title and short description. -->
       <header class="journal-hero">
         <div><p class="eyebrow">02 / Watch Design</p><h1>Small details.<br>Big character.</h1></div>
         <p class="journal-deck">A closer look at the lines, materials, and proportions that turn an instrument into an expression.</p>
       </header>
+      <!-- A local image is used so the page still works without an internet connection. -->
       <figure class="feature-image">
         <img src="images/design.jpg" alt="Close-up photograph showing the details of a wristwatch" width="1400" height="800">
         <figcaption>Watch Design / The Watch Journal</figcaption>
       </figure>
+      <!-- This section places the section heading beside the article paragraphs. -->
       <section class="article-story" aria-labelledby="design-story">
         <div class="section-heading"><p class="section-number">The journal</p><h2 id="design-story">Character by design</h2></div>
         <div class="article-copy">
@@ -42,6 +49,7 @@
       </section>
     </article>
   </main>
+  <!-- The matching footer finishes the page and identifies this journal entry. -->
   <footer class="about-footer"><span>© 2026 The Watch Journal</span><span>02 / Watch Design</span></footer>
 </body>
 </html>

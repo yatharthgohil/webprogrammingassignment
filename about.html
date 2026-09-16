@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="watch-styles.css">
 </head>
 <body class="about">
+  <!-- Shared site header: the circular mark and title act as the site logo. -->
   <header class="site-header">
     <a class="brand" href="everyday-watches.html" aria-label="The Watch Journal home">
       <span class="brand-mark">TWJ</span>
@@ -16,7 +17,9 @@
     <span class="site-label">A student’s take on timepieces</span>
   </header>
 
+  <!-- CSS Grid divides the About page into a sidebar and main content area. -->
   <main class="about-layout">
+    <!-- The sidebar provides space for navigation links, as required by the layout. -->
     <aside class="about-sidebar">
       <p class="nav-label">Journal index</p>
       <nav class="about-nav" aria-label="Main navigation">
@@ -28,7 +31,9 @@
       <p class="sidebar-note">Observations on the objects that help us keep, mark, and remember time.</p>
     </aside>
 
+    <!-- This article holds all of the main About page content. -->
     <article class="about-content">
+      <!-- The hero pairs the main heading with a short introduction. -->
       <header class="about-hero">
         <div>
           <p class="eyebrow">04 / About the journal</p>
@@ -37,12 +42,14 @@
         <p class="hero-summary">A quiet corner of the internet for thoughtful design, tiny mechanics, and the stories we carry on our wrists.</p>
       </header>
 
+      <!-- This decorative rule visually separates the hero from the story. -->
       <div class="about-rule" aria-hidden="true">
         <span></span>
         <span class="rule-diamond"></span>
         <span></span>
       </div>
 
+      <!-- The story section uses a grid to keep the heading and text organized. -->
       <section class="about-story" aria-labelledby="our-story-title">
         <div class="section-heading">
           <p class="section-number">01</p>
@@ -54,6 +61,7 @@
         </div>
       </section>
 
+      <!-- Three cards summarize the main ideas behind The Watch Journal. -->
       <section class="about-values" aria-labelledby="values-title">
         <div class="section-heading">
           <p class="section-number">02</p>
@@ -78,6 +86,7 @@
         </div>
       </section>
 
+      <!-- A contrasting callout closes the page and links back into the journal. -->
       <section class="about-quote" aria-label="Journal philosophy">
         <p>“A good watch does more than tell the time. It becomes part of how you remember it.”</p>
         <a class="explore-link" href="everyday-watches.html">Explore the journal <span aria-hidden="true">→</span></a>
@@ -85,6 +94,7 @@
     </article>
   </main>
 
+  <!-- The same footer style is used across every page for consistency. -->
   <footer class="about-footer">
     <span>© 2026 The Watch Journal</span>
     <span>Made with curiosity and good timing.</span>

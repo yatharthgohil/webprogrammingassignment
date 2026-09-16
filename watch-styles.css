@@ -130,6 +130,7 @@ footer {
 }
 
 /* About page: responsive editorial layout built with Grid and Flexbox. */
+/* These custom properties keep the new pages on one consistent color palette. */
 .about, .journal-page {
   --ink: #162936;
   --brass: #9a7332;
@@ -142,6 +143,7 @@ footer {
   background: var(--cream);
 }
 
+/* Flexbox places the brand and small site description on opposite sides. */
 :is(.about, .journal-page) .site-header {
   display: flex;
   align-items: center;
@@ -152,6 +154,7 @@ footer {
   border-bottom: 1px solid rgba(247, 243, 235, 0.22);
 }
 
+/* The brand groups the circular initials with the journal name. */
 .brand {
   display: inline-flex;
   align-items: center;
@@ -183,12 +186,14 @@ footer {
 }
 
 .about-layout {
+  /* The first column is navigation; the flexible second column holds content. */
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
   gap: clamp(40px, 7vw, 90px);
   padding: 72px 0 84px;
 }
 
+/* The sidebar uses Flexbox so its small note can sit near the bottom. */
 .about-sidebar {
   align-self: stretch;
   display: flex;
@@ -207,6 +212,7 @@ footer {
 }
 
 .about-nav {
+  /* Navigation links stack vertically on wide screens. */
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -250,6 +256,7 @@ footer {
 .about-content { min-width: 0; }
 
 .about-hero {
+  /* The heading receives more space than the introductory summary. */
   display: grid;
   grid-template-columns: minmax(0, 1.8fr) minmax(220px, 0.7fr);
   gap: clamp(30px, 6vw, 70px);
@@ -293,6 +300,7 @@ footer {
 }
 
 .about-story, .about-values {
+  /* A narrow label column sits beside the main section content. */
   display: grid;
   grid-template-columns: 150px 1fr;
   gap: 34px;
@@ -315,6 +323,7 @@ footer {
 .story-copy .intro { font-size: 1.16rem; line-height: 1.75; }
 
 .value-grid {
+  /* Equal columns create three consistent idea cards. */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
@@ -344,6 +353,7 @@ footer {
 }
 
 .about-quote {
+  /* Flexbox keeps the quote and link aligned until the mobile breakpoint. */
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -384,6 +394,7 @@ footer {
 }
 
 @media (max-width: 850px) {
+  /* Collapse major two-column layouts before they become crowded. */
   .about-layout { grid-template-columns: 1fr; padding-top: 42px; }
   .about-sidebar { padding: 0 0 26px; border-right: 0; border-bottom: 1px solid var(--line); }
   .about-nav { display: grid; grid-template-columns: 1fr 1fr; }
@@ -393,6 +404,7 @@ footer {
 }
 
 @media (max-width: 620px) {
+  /* Phones use single-column content and slightly smaller page gutters. */
   .about, .journal-page { padding: 0 20px; }
   :is(.about, .journal-page) .site-header, .about-footer { margin-right: -20px; margin-left: -20px; padding-right: 20px; padding-left: 20px; }
   :is(.about, .journal-page) .site-label { display: none; }
@@ -407,6 +419,7 @@ footer {
 .journal-content { min-width: 0; }
 
 .journal-hero {
+  /* Article titles and their descriptions share a two-column hero. */
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
   gap: clamp(32px, 6vw, 72px);
@@ -422,6 +435,7 @@ footer {
 }
 
 .feature-image {
+  /* Overflow hidden contains the subtle image zoom on hover. */
   position: relative;
   margin: 58px 0 0;
   overflow: hidden;
@@ -452,6 +466,7 @@ footer {
 }
 
 .article-story {
+  /* This repeats the label-and-content grid used on the About page. */
   display: grid;
   grid-template-columns: 150px 1fr;
   gap: 34px;
@@ -460,6 +475,7 @@ footer {
 }
 
 .article-copy {
+  /* Supporting paragraphs sit side by side on larger screens. */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 34px;
@@ -482,6 +498,7 @@ footer {
 }
 
 .journal-page .watch-details {
+  /* The collection page pairs its checklist with the movement table. */
   display: grid;
   grid-template-columns: minmax(180px, 0.55fr) minmax(0, 1.45fr);
   gap: 40px;
