@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The story and point of view behind The Watch Journal.">
   <title>About | The Watch Journal</title>
+  <!-- Apply the saved palette before painting the page. -->
+  <script src="watch-theme.js"></script>
   <link rel="stylesheet" href="watch-styles.css">
 </head>
 <body class="about">
@@ -14,7 +16,11 @@
       <span class="brand-mark">TWJ</span>
       <span>The Watch Journal</span>
     </a>
-    <span class="site-label">A student’s take on timepieces</span>
+    <!-- A native button supports keyboards and reports the dark mode state. -->
+    <div class="header-actions">
+      <span class="site-label">A student’s take on timepieces</span>
+      <button class="theme-toggle" type="button" aria-pressed="false" hidden>Dark mode</button>
+    </div>
   </header>
 
   <!-- CSS Grid divides the About page into a sidebar and main content area. -->
@@ -101,3 +107,4 @@
   </footer>
 </body>
 </html>
+
