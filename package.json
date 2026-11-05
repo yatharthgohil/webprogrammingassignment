@@ -1,0 +1,17 @@
+{
+  "name": "watch-store-database-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "db:demo": "node database-demo.js",
+    "screenshot:table": "powershell -NoProfile -ExecutionPolicy Bypass -File screenshot.ps1 -View table",
+    "screenshot:node": "powershell -NoProfile -ExecutionPolicy Bypass -File screenshot.ps1 -View node"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "pg": "^8.16.3"
+  }
+}
